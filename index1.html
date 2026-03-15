@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>访问我的 Mac</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
+        .box { background: #f0f0f0; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        code { background: #e0e0e0; padding: 2px 6px; border-radius: 3px; }
+        .ip { font-size: 24px; color: #0066cc; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>🖥️ 访问我的 Mac</h1>
+    
+    <div class="box">
+        <h3>Tailscale IP（推荐）</h3>
+        <p class="ip">100.112.243.17</p>
+        <p>在其他安装了 Tailscale 的设备上访问：</p>
+        <ul>
+            <li>Web: <code>http://100.112.243.17:8080</code></li>
+            <li>SSH: <code>ssh sin-ey@100.112.243.17</code></li>
+        </ul>
+    </div>
+    
+    <div class="box">
+        <h3>IPv6 地址（直连）</h3>
+        <p class="ip">2408:8256:f182:16af:8e3:6953:eb7f:c289</p>
+        <p>在支持 IPv6 的网络访问：</p>
+        <code>http://[2408:8256:f182:16af:8e3:6953:eb7f:c289]:8080</code>
+    </div>
+    
+    <div class="box">
+        <h3>设备名</h3>
+        <p>使用 Tailscale MagicDNS：</p>
+        <code>sin-edemac-mini</code>
+    </div>
+</body>
+</html>
